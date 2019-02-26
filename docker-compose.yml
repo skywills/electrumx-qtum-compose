@@ -2,7 +2,7 @@ version: '3'
 services:
     electrumx:
       network_mode: "host"
-      image: skywills/electrumx-qtum
+      image: skywills87/electrumx-qtum
       ports: 
         - "${SERVICE_PORT}:50001"
       environment:
