@@ -1,0 +1,12 @@
+version: '3'
+services:
+    electrumx:
+      network_mode: "host"
+      image: skywills/electrumx-qtum
+      ports: 
+        - "${SERVICE_PORT}:50001"
+      environment:
+        - 'DAEMON_URL=${DAEMON_URL}'
+        - 'COIN=${COIN}'
+        - 'RPC_HOST=127.0.0.1'
+        - 'RPC_PORT=${RPC_PORT}'        
