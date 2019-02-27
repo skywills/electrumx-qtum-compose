@@ -9,4 +9,7 @@ services:
         - 'DAEMON_URL=${DAEMON_URL}'
         - 'COIN=${COIN}'
         - 'RPC_HOST=127.0.0.1'
-        - 'RPC_PORT=${RPC_PORT}'        
+        - 'RPC_PORT=${RPC_PORT}'
+        - 'TCP_PORT=${TCP_PORT}'
+        - 'SSL_PORT=${SSL_PORT}'       
+        
